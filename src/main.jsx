@@ -7,6 +7,7 @@ import RootLayout from './layout/RootLayout';
 import Homepage from './pages/homepage/Homepage';
 import Timelinepage from './pages/timelinepage/Timelinepage';
 import Statuspage from './pages/statuspage/Statuspage';
+import Errorpage from './pages/errorpage/Errorpage';
 
 
 
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         Component: Statuspage,
       }
     ],
-    errorElement: <h2>sjh</h2>
+    errorElement: <Errorpage/>
   },
 
 ]);
