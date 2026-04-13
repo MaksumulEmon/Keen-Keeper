@@ -30,8 +30,6 @@ const Navbar = () => {
 
 
 
-
-
                 </div>
 
                 {/* Hamburger Icon */}
