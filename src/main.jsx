@@ -3,22 +3,34 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { RouterProvider } from 'react-router/dom'
 import { createBrowserRouter } from 'react-router';
+import RootLayout from './layout/RootLayout';
+import Homepage from './pages/homepage/Homepage';
+import Timelinepage from './pages/timelinepage/Timelinepage';
+import Statuspage from './pages/statuspage/Statuspage';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    Component: RootLayout,
+    children: [
+      {
+        index: true,
+        Component: Homepage,
+      },
+      {
+        path: "timeline",
+        Component: Timelinepage,
+      },
+      {
+        path: "status",
+        Component: Statuspage,
+      }
+    ],
+    errorElement: <h2>sjh</h2>
   },
-  {
-    path: "/timeline",
-    element: <div>HelloTimeline....</div>,
-  },
-  {
-    path: "/status",
-    element: <div>Hello  status</div>,
-  },
+
 ]);
 
 
