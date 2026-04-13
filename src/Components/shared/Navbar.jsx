@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Mynavlink from './Mynavlink';
+import { GrHomeRounded } from 'react-icons/gr';
+import { MdTimeline } from 'react-icons/md';
+import { IoTimeOutline } from 'react-icons/io5';
 
 const Navbar = () => {
 
@@ -7,16 +11,27 @@ const Navbar = () => {
     return (
 
 
-        <nav className="bg-white px-5 lg:px-15 py-4 border-b-2 border-[#E9E9E9] ">
+        <nav className="bg-white px-5 lg:px-15 py-5 border-b-2 border-[#E9E9E9] ">
             <div className="flex justify-between items-center">
-                
+
                 <p className='text-2xl font-extrabold text-[#244D3F]'>KeenKeeper</p>
 
 
                 <div className="hidden md:flex gap-3">
-                    <button className="bg-[#244D3F] px-3 py-1 rounded">Home</button>
-                    <button className="bg-[#244D3F] px-3 py-1 rounded">About</button>
-                    <button className="bg-[#244D3F] px-3 py-1 rounded">Contact</button>
+
+                
+                       
+                    <Mynavlink  to={"/"}> <GrHomeRounded /> Home</Mynavlink>
+                 
+
+                    <Mynavlink to={"/timeline"}> <IoTimeOutline /> Timeline</Mynavlink>
+
+                    <Mynavlink to={"/status"}> <MdTimeline /> Stats</Mynavlink>
+
+
+
+
+
                 </div>
 
                 {/* Hamburger Icon */}
@@ -30,9 +45,13 @@ const Navbar = () => {
             </div>
 
             <div className={`${isOpen ? "block" : "hidden"} md:hidden mt-3`}>
-                <button className="block w-full text-left bg-gray-600 px-3 py-4 border-b border-gray-700">Home</button>
-                <button className="block w-full text-left bg-gray-600 px-3 py-4 border-b border-gray-700">About</button>
-                <button className="block w-full text-left bg-gray-600 px-3 py-4">Contact</button>
+                <div className=' flex flex-col gap-2 bg-gray-200 rounded p-4'>
+                    <Mynavlink  to={"/"}> <GrHomeRounded /> Home</Mynavlink>
+
+                    <Mynavlink to={"/timeline"}> <IoTimeOutline /> Timeline</Mynavlink>
+
+                    <Mynavlink to={"/status"}> <MdTimeline /> Stats</Mynavlink>
+                </div>
             </div>
         </nav>
     );

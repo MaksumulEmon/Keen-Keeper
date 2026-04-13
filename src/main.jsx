@@ -21,11 +21,11 @@ const router = createBrowserRouter([
         Component: Homepage,
       },
       {
-        path: "timeline",
+        path: "/timeline",
         Component: Timelinepage,
       },
       {
-        path: "status",
+        path: "/status",
         Component: Statuspage,
       }
     ],
