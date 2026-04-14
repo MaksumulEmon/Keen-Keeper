@@ -1,7 +1,11 @@
 import React from 'react';
 import { FiPlus } from 'react-icons/fi';
+import useFriends from '../../hooks/useFriends';
 
 const Banner = () => {
+
+    const { friends } = useFriends();
+
     return (
 
         <div className='bg-[#F8FAFC]'>
@@ -19,22 +23,22 @@ const Banner = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4 lg:mt-8 p-4'>
 
                     <div className='bg-white  shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] rounded-xl p-8 items-center justify-center flex flex-col '>
-                        <p className='text-3xl font-semibold text-[#244D3F]'>10</p>
+                        <p className='text-3xl font-semibold text-[#244D3F]'>{friends.length}</p>
                         <p className='text-lg text-[#64748B]'>Total Friends</p>
                     </div>
 
                     <div className='bg-white  shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] rounded-xl p-8 items-center justify-center flex flex-col '>
-                        <p className='text-3xl font-semibold text-[#244D3F]'>3</p>
+                        <p className='text-3xl font-semibold text-[#244D3F]'>{friends.filter(f => f.status === "on-track"). length}</p>
                         <p className='text-lg text-[#64748B]'>On Track</p>
                     </div>
 
                     <div className='bg-white  shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] rounded-xl p-8 items-center justify-center flex flex-col '>
-                        <p className='text-3xl font-semibold text-[#244D3F]'>6</p>
+                        <p className='text-3xl font-semibold text-[#244D3F]'>{friends.filter(f => f.status === "overdue"). length}</p>
                         <p className='text-lg text-[#64748B]'>Need Attention</p>
                     </div>
 
                     <div className='bg-white  shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] rounded-xl p-8 items-center justify-center flex flex-col '>
-                        <p className='text-3xl font-semibold text-[#244D3F]'>12</p>
+                        <p className='text-3xl font-semibold text-[#244D3F]'>{friends.length }</p>
                         <p className='text-lg text-[#64748B]'>Interactions This Month</p>
                     </div>
 
