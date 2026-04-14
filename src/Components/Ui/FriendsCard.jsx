@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FriendsCard = ({ friend }) => {
     return (
-        <div>
+        <Link to={`/${friend.id}`}>
             <div className='rounded-2xl hover:shadow-2xl transition '>
                 <div className='text-center p-6  rounded-xl  bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] space-y-4 m-4 lg:m-0'>
 
@@ -32,7 +33,7 @@ const FriendsCard = ({ friend }) => {
                     >{friend.status}</p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
