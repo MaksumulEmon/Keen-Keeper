@@ -26,7 +26,7 @@ const YourFriends = () => {
     return (
         <div className='bg-[#F8FAFC]'>
             <div className='max-w-7xl mx-auto'>
-                <p className='text-2xl  font-semibold pt-5 lg:pt-16 pb-2 m-4'>Your Friends</p>
+                <p className='text-2xl  font-semibold pt-5 lg:pt-16 md:pb-2 px-4'>Your Friends</p>
 
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  lg:gap-4 lg:pb-10 '>
