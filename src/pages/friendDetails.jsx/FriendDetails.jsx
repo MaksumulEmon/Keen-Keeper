@@ -31,7 +31,7 @@ const FriendDetails = () => {
         <div className='bg-[#F8FAFC]'>
             <div className='max-w-7xl mx-auto '>
 
-                <div className=' grid grid-cols-1 lg:grid-cols-5 gap-2 lg:pt-17 m-4'>
+                <div className=' grid grid-cols-1 lg:grid-cols-5 gap-2 lg:pt-17 mx-5'>
 
                     <div className='lg:col-span-2 '>
                         
@@ -121,7 +121,7 @@ const FriendDetails = () => {
 
                 {/* Second / Last Layout */}
 
-                <div className='grid  grid-cols-1 lg:grid-cols-5 gap-2 pb-10 m-4'>
+                <div className='grid  grid-cols-1 lg:grid-cols-5 gap-5 pb-10 mx-4'>
 
                     <div className='lg:col-span-2 '>
                         <div className='flex flex-col gap-4'>
@@ -147,7 +147,7 @@ const FriendDetails = () => {
 
 
 
-                    <div className='lg:col-span-3 bg-white  mx-5 '>
+                    <div className='lg:col-span-3 bg-white mx-2'>
 
                         <div className='flex flex-col p-4  shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] rounded-xl '>
 
@@ -175,17 +175,6 @@ const FriendDetails = () => {
                                 </div>
 
                             </div>
-
-                            {/* <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-[#1F2937] p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <VscBellDot /> Snooze 2 weeks</button>
-
-
-                            <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-[#1F2937] p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <FiArchive /> Archive</button>
-
-
-                            <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-red-600 p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <RiDeleteBin6Line color='red' /> Delete</button> */}
-
-
-
 
                         </div>
 
