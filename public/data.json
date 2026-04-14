@@ -2,14 +2,11 @@
     {
         "id": 1,
         "name": "John Doe",
-        "picture": "https://i.pravatar.cc/150?img=1",
+        "picture": "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         "email": "john@example.com",
         "days_since_contact": 12,
         "status": "overdue",
-        "tags": [
-            "college",
-            "close friend"
-        ],
+        "tags": "college",
         "bio": "Met in university. Love hiking together.",
         "goal": 14,
         "next_due_date": "2025-07-20"
@@ -21,9 +18,7 @@
         "email": "jane@example.com",
         "days_since_contact": 10,
         "status": "almost due",
-        "tags": [
-            "office"
-        ],
+        "tags": "office",
         "bio": "Work colleague and project partner.",
         "goal": 14,
         "next_due_date": "2025-07-18"
@@ -35,9 +30,7 @@
         "email": "mike@example.com",
         "days_since_contact": 5,
         "status": "on-track",
-        "tags": [
-            "gym"
-        ],
+        "tags": "gym",
         "bio": "Workout buddy from gym.",
         "goal": 10,
         "next_due_date": "2025-07-25"
@@ -49,9 +42,7 @@
         "email": "emily@example.com",
         "days_since_contact": 15,
         "status": "overdue",
-        "tags": [
-            "school"
-        ],
+        "tags": "school",
         "bio": "School friend, loves art.",
         "goal": 14,
         "next_due_date": "2025-07-15"
@@ -63,9 +54,7 @@
         "email": "chris@example.com",
         "days_since_contact": 13,
         "status": "almost due",
-        "tags": [
-            "travel"
-        ],
+        "tags": "travel",
         "bio": "Travel partner for trips.",
         "goal": 14,
         "next_due_date": "2025-07-19"
@@ -73,13 +62,11 @@
     {
         "id": 6,
         "name": "Sarah Wilson",
-        "picture": "https://i.pravatar.cc/150?img=6",
+        "picture": "https://img.freepik.com/free-photo/artist-white_1368-6282.jpg?semt=ais_hybrid&w=740&q=80",
         "email": "sarah@example.com",
         "days_since_contact": 3,
         "status": "on-track",
-        "tags": [
-            "family"
-        ],
+        "tags": "family",
         "bio": "Cousin, very close.",
         "goal": 7,
         "next_due_date": "2025-07-28"
@@ -91,9 +78,7 @@
         "email": "david@example.com",
         "days_since_contact": 16,
         "status": "overdue",
-        "tags": [
-            "business"
-        ],
+        "tags": "business",
         "bio": "Business partner.",
         "goal": 14,
         "next_due_date": "2025-07-14"
@@ -105,9 +90,7 @@
         "email": "sophia@example.com",
         "days_since_contact": 11,
         "status": "almost due",
-        "tags": [
-            "neighbor"
-        ],
+        "tags": "neighbor",
         "bio": "Lives next door.",
         "goal": 14,
         "next_due_date": "2025-07-21"
@@ -119,9 +102,7 @@
         "email": "daniel@example.com",
         "days_since_contact": 2,
         "status": "on-track",
-        "tags": [
-            "gaming"
-        ],
+        "tags": "gaming",
         "bio": "Online gaming friend.",
         "goal": 7,
         "next_due_date": "2025-07-30"
@@ -133,9 +114,7 @@
         "email": "olivia@example.com",
         "days_since_contact": 14,
         "status": "overdue",
-        "tags": [
-            "college"
-        ],
+        "tags": "college",
         "bio": "College best friend.",
         "goal": 14,
         "next_due_date": "2025-07-16"
