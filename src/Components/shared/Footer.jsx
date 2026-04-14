@@ -35,16 +35,20 @@ const Footer = () => {
 
 
 
-                    <div className='flex-col lg:flex justify-between pt-2 lg:pt-5 text-[#FAFAFA] opacity-50'>
+                    <div className=' lg:flex  justify-between pt-2 lg:pt-5 text-[#FAFAFA] opacity-50'>
 
-                        <small>© 2026 KeenKeeper. All rights reserved.</small>
-
-
-                        <div className='flex justify-between gap-4'>
-                           <small>Privacy Policy</small>
-                           <small>Terms of Service</small>
-                           <small>Cookies</small>
+                        <div>
+                            <small>© 2026 KeenKeeper. All rights reserved.</small>
                         </div>
+
+
+
+                        <div className='flex justify-between gap-4 mt-4 m-4'>
+                            <small>Privacy Policy</small>
+                            <small>Terms of Service</small>
+                            <small>Cookies</small>
+                        </div>
+
                     </div>
 
 

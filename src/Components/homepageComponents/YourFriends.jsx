@@ -33,7 +33,7 @@ const YourFriends = () => {
             <div className='max-w-7xl mx-auto'>
                 <p className='text-2xl  font-semibold pt-5 lg:pt-16 md:pb-2 px-4'>Your Friends</p>
 
-                {loading? <div className='flex justify-center h-90 pt-30'><FadeLoader /></div> :
+                {loading? <div className='flex justify-center h-90 pt-30'> <FadeLoader/> </div> :
 
 
                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  lg:gap-4 lg:pb-10 '>
@@ -43,9 +43,6 @@ const YourFriends = () => {
                     })}
 
                 </div>}
-
-
-
 
 
 

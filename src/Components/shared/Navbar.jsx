@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
 
 
-        <nav className="bg-white px-5 lg:px-15 py-5 border-b-2 border-[#E9E9E9] ">
+        <nav className="bg-white px-5 lg:px-15 py-5 border-b-2 border-[#E9E9E9]">
             <div className="flex justify-between items-center">
 
                 <p className='text-2xl font-extrabold text-[#244D3F]'>KeenKeeper</p>
