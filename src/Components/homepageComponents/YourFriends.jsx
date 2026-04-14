@@ -1,10 +1,12 @@
-import React, { use, useEffect, useState } from 'react';
+import React, {   useEffect, useState } from 'react';
 import FriendsCard from '../Ui/FriendsCard';
+import { FadeLoader } from 'react-spinners';
 
 const YourFriends = () => {
 
 
     const [friends, setFriends] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -14,10 +16,10 @@ const YourFriends = () => {
             setFriends(data);
 
 
-            // setTimeout(() => {
-            //     setApps(data);
-            //     setLoading(false)
-            // }, 1000);
+            setTimeout(() => {
+                setFriends(data);
+                setLoading(false)
+            }, 1000);
         };
 
         fetchData();
@@ -29,13 +31,16 @@ const YourFriends = () => {
             <div className='max-w-7xl mx-auto'>
                 <p className='text-2xl  font-semibold pt-5 lg:pt-16 md:pb-2 px-4'>Your Friends</p>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  lg:gap-4 lg:pb-10 '>
+                {loading? <div className='flex justify-center h-90 pt-30'><FadeLoader /></div> :
+
+
+                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  lg:gap-4 lg:pb-10 '>
 
                     {friends.map((friend, index) => {
                         return <FriendsCard friend={friend} key={index}/>
                     })}
 
-                </div>
+                </div>}
 
 
 
