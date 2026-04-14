@@ -1,29 +1,31 @@
-import React, {   useEffect, useState } from 'react';
+import React, {   } from 'react';
 import FriendsCard from '../Ui/FriendsCard';
 import { FadeLoader } from 'react-spinners';
+import useFriends from '../../hooks/useFriends';
 
 const YourFriends = () => {
 
+    const {friends, loading} = useFriends();
 
-    const [friends, setFriends] = useState([]);
-    const [loading, setLoading] = useState(true);
+    // const [friends, setFriends] = useState([]);
+    // const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const res = await fetch("/data.json");
-            const data = await res.json();
-            console.log(data)
-            setFriends(data);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const res = await fetch("/data.json");
+    //         const data = await res.json();
+    //         console.log(data)
+    //         setFriends(data);
 
 
-            setTimeout(() => {
-                setFriends(data);
-                setLoading(false)
-            }, 1000);
-        };
+    //         setTimeout(() => {
+    //             setFriends(data);
+    //             setLoading(false)
+    //         }, 1000);
+    //     };
 
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
 
 
     return (

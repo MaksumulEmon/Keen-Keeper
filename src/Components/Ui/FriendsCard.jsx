@@ -13,7 +13,15 @@ const FriendsCard = ({ friend }) => {
                     <p className='text-[#64748B] '>{friend.days_since_contact}day ago</p>
 
                     <div>
-                        <p className='text-[#64748B] font-medium bg-[#CBFADB] inline-block px-3 py-1 rounded-full'>{friend.tags}</p>
+                        {
+                            friend.tags.map((tag, index) => {
+                                return (
+                                    <p key={index} className='text-[#64748B] font-medium  bg-[#CBFADB] inline-block px-3 py-1 rounded-full mr-2'>{tag}</p>
+                                );
+                            })
+
+                        }
+
                     </div>
 
 
