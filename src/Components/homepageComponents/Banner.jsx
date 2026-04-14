@@ -6,7 +6,8 @@ const Banner = () => {
 
         <div className='bg-[#F8FAFC]'>
             <div className='max-w-7xl mx-auto '>
-                <div className='text-center pt-17 space-y-2 lg:space-y-5'>
+
+                <div className='text-center pt-5 lg:pt-17 space-y-2 lg:space-y-5'>
                     <h1 className='mx-4 text-4xl md:text-5xl text-[#1F2937] font-bold '>Friends to keep close in your life</h1>
                     <p className='text-[#64748B]/90'>Your personal shelf of meaningful connections. Browse, tend, and nurture the
                         relationships that matter most. </p>
@@ -15,7 +16,7 @@ const Banner = () => {
                 </div>
 
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4 lg:mt-8 m-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4 lg:mt-8 p-4'>
 
                     <div className='bg-white  shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] rounded-xl p-8 items-center justify-center flex flex-col '>
                         <p className='text-3xl font-semibold text-[#244D3F]'>10</p>

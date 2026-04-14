@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='bg-[#244D3F]'>
             <div className='max-w-7xl mx-auto'>
 
-                <div className='text-center space-y-2 m-5 pt-10 lg:pt-20 pb-6'>
+                <div className='text-center space-y-2  pt-10 lg:pt-20 pb-6'>
                     <h1 className='font-bold text-4xl lg:text-6xl text-white' >KeenKeeper</h1>
                     <p className='text-white/40'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
 
