@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {  useContext } from 'react';
+import { TimelineContext } from '../../context/TimelineContext';
 
 const Timelinepage = () => {
+
+    const contextData = useContext(TimelineContext);
+    console.log(contextData ,"ContextData");
     return (
         <div>
-            ttimelin epage......
+            timelin epage......
         </div>
     );
 };

@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider } from 'react-router/dom'
 
 import { router } from './router/Routes';
+import TimelineProvider from './context/TimelineProvider';
 
 
 
@@ -14,6 +15,8 @@ import { router } from './router/Routes';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <RouterProvider router={router} />
+    <TimelineProvider>
+      <RouterProvider router={router} />
+    </TimelineProvider>
   </StrictMode>,
 )
