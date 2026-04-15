@@ -7,7 +7,6 @@ const TimelineProvider = ({ children }) => {
     const [activites,setActivites] = useState([]);
     
 
-
     const data = {
        activites,setActivites,
     };

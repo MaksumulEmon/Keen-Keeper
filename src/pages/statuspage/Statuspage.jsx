@@ -4,19 +4,6 @@ import { TimelineContext } from '../../context/TimelineContext';
 
 const Statuspage = () => {
 
-    // const data =[
-    //     {name: "Group A", value: 400, fill: "0088FE"},
-    //     {name: "Group A", value: 120, fill: "0088FE"},
-    //     {name: "Group A", value: 230, fill: "0088FE"},
-    //     {name: "Group A", value: 400, fill: "FF87FE"},
-    // ]
-
-
-    // const { installedApps } = useContext(InstalledAppContext);
-    // const { apps, loading } = useApps();
-
-    // const unstalledApps = apps.length - installedApps.length;
-
     const { activites } = useContext(TimelineContext);
 
     const call = activites.filter(item => item.type === "Call");

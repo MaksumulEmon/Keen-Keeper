@@ -9,6 +9,7 @@ import callPng from "../../assets/call.png"
 import textPng from "../../assets/text.png"
 import videoPng from "../../assets/video.png"
 import { TimelineContext } from '../../context/TimelineContext';
+import { toast } from 'react-toastify';
 
 
 const FriendDetails = () => {
@@ -39,10 +40,14 @@ const FriendDetails = () => {
                 type: "Call",
                 friend: expectedFriend
             }
+
         ]);
+        toast.success(`Call with ${expectedFriend.name}`);
+
+
     };
 
-
+    // Text
     const handleText = () => {
         setActivites(prev => [
             ...prev,
@@ -51,8 +56,11 @@ const FriendDetails = () => {
                 friend: expectedFriend
             }
         ]);
+        toast.success(`Text with ${expectedFriend.name}`);
     }
 
+
+    // Video
     const handleVideo = () => {
         setActivites(prev => [
             ...prev,
@@ -61,10 +69,8 @@ const FriendDetails = () => {
                 friend: expectedFriend
             }
         ]);
+        toast.success(`Video call with ${expectedFriend.name}`);
     }
-
-
-
 
 
 
@@ -161,7 +167,6 @@ const FriendDetails = () => {
 
 
 
-
                 {/* Second / Last Layout */}
 
                 <div className='grid  grid-cols-1 lg:grid-cols-5 gap-5 pb-10 mx-4'>
@@ -172,9 +177,7 @@ const FriendDetails = () => {
 
                             <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-[#1F2937] p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <VscBellDot /> Snooze 2 weeks</button>
 
-
                             <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-[#1F2937] p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <FiArchive /> Archive</button>
-
 
                             <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-red-600 p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <RiDeleteBin6Line color='red' /> Delete</button>
 

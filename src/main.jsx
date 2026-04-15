@@ -8,10 +8,6 @@ import TimelineProvider from './context/TimelineProvider';
 
 
 
-
-
-
-
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>

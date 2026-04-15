@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Errorpage = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-purple-600 via-indigo-600 to-blue-600 text-white px-4">
+        <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-[#244D3F] via-[#64748B] to-[#1F2937] text-white px-4">
 
             <div className="text-center">
 
@@ -23,7 +23,7 @@ const Errorpage = () => {
 
                 {/* Button */}
                 <Link to="/">
-                    <button className="px-6 py-3 bg-white text-purple-700 font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <button className="px-6 py-3 bg-white text-[#1F2937] font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                         Go Home
                     </button>
                 </Link>
