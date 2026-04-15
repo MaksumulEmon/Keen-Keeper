@@ -1,16 +1,90 @@
-# React + Vite
+# 🚀 KeenKeeper – 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a modern and intuitive **friend tracking application** that helps users monitor, manage, and stay connected with their friends' activities in real time.
+It provides a clean interface with categorized interaction types like calls, texts, and video activities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+KeenKeeper allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Track friend interactions (Call, Text, Video)
+* View activity timeline
+* Filter activities easily
+* Stay organized with a simple and responsive UI
 
-## Expanding the ESLint configuration
+This project focuses on building a real-world tracking system using modern frontend technologies.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+* ⚛️ React.js
+* 🌐 React Router
+* 🎨 Tailwind CSS + DaisyUI
+* 📦 Context API (State Management)
+* 📊 Recharts (for data visualization)
+
+---
+
+## ✨ Features
+
+* 📱 **Responsive Design** (Mobile + Desktop)
+* 🔍 **Filter System** (Call / Text / Video)
+* 📊 **Activity Timeline View**
+* 🧠 **Global State Management using Context API**
+* 🚫 **Custom 404 Error Page**
+* ⚡ Smooth UI interactions & hover effects
+
+---
+
+## 🧩 Pages Included
+
+* 🏠 Home Page
+* 📅 Timeline Page
+* 📡 Status Page
+* ❌ 404 Error Page
+
+---
+
+## 📸 UI Highlights
+
+* Clean and modern dashboard
+* Interactive charts
+* Smooth hover animations
+* User-friendly layout
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository:
+
+```bash
+git clone https://github.com/your-username/keenkeeper.git
+```
+
+### Install dependencies:
+
+```bash
+npm install
+```
+
+### Run the project:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🎯 Future Improvements
+
+* 🔔 Real-time notifications
+* 🌍 Live location tracking
+* 🔐 Authentication system
+* ☁️ Backend integration (Firebase / Node.js)
+
+---
+
