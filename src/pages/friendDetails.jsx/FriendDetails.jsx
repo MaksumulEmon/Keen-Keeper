@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router';
 import useFriends from '../../hooks/useFriends';
 import { FadeLoader } from 'react-spinners';
@@ -20,7 +20,7 @@ const FriendDetails = () => {
     // console.log(expectedFriend)
 
 
-    const { activites, setActivites } = useContext(TimelineContext);
+    const { setActivites } = useContext(TimelineContext);
 
 
     if (loading) {
@@ -29,11 +29,6 @@ const FriendDetails = () => {
         </div>
     }
 
-
-
-    // const handleCall = () => {
-    //     setCall([...call, expectedFriend]);
-    // }
 
 
     // Call
@@ -199,19 +194,22 @@ const FriendDetails = () => {
 
                             <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4 rounded'>
 
-                                <div onClick={handleCall} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
+                                <div onClick={handleCall} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3 hover:bg-gray-100 hover:border-gray-300 hover:shadow-sm
+                                    transition-all duration-300 ease-in-out cursor-pointer active:scale-95'>
                                     <img src={callPng} alt="" className='w-7 h-7' />
                                     <h1 className='text-lg text-[#1F2937]'>Call</h1>
                                 </div>
 
 
-                                <div onClick={handleText} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
+                                <div onClick={handleText} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3 hover:bg-gray-100 hover:border-gray-300 hover:shadow-sm
+                                      transition-all duration-300 ease-in-out cursor-pointer active:scale-95'>
                                     <img src={textPng} alt="" className='w-7 h-7' />
                                     <h1 className='text-lg text-[#1F2937]'>Text</h1>
                                 </div>
 
 
-                                <div onClick={handleVideo} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
+                                <div onClick={handleVideo} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3 hover:bg-gray-100 hover:border-gray-300 hover:shadow-sm
+                                     transition-all duration-300 ease-in-out cursor-pointer active:scale-95'>
                                     <img src={videoPng} alt="" className='w-7 h-7' />
                                     <h1 className='text-lg text-[#1F2937]'>Video</h1>
                                 </div>
