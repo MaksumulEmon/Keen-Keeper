@@ -4,12 +4,12 @@ import { TimelineContext } from "./TimelineContext";
 
 const TimelineProvider = ({ children }) => {
 
-    const [call, setCall] = useState([]);
+    const [activites,setActivites] = useState([]);
     
 
 
     const data = {
-       call,setCall,
+       activites,setActivites,
     };
 
     return (

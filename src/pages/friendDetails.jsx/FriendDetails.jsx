@@ -20,7 +20,7 @@ const FriendDetails = () => {
     // console.log(expectedFriend)
 
 
-    const {call, setCall} = useContext(TimelineContext);
+    const { activites, setActivites } = useContext(TimelineContext);
 
 
     if (loading) {
@@ -36,12 +36,43 @@ const FriendDetails = () => {
     // }
 
 
+    // Call
     const handleCall = () => {
-        setCall([...call, expectedFriend]);
+        setActivites(prev => [
+            ...prev,
+            {
+                type: "Call",
+                friend: expectedFriend
+            }
+        ]);
     };
 
 
-    console.log(call, "Call");
+    const handleText = () => {
+        setActivites(prev => [
+            ...prev,
+            {
+                type: "Text",
+                friend: expectedFriend
+            }
+        ]);
+    }
+
+    const handleVideo = () => {
+        setActivites(prev => [
+            ...prev,
+            {
+                type: "Video",
+                friend: expectedFriend
+            }
+        ]);
+    }
+
+
+
+
+
+
 
 
     return (
@@ -152,14 +183,8 @@ const FriendDetails = () => {
 
                             <button className=' flex  items-center justify-center gap-2 w-full  font-medium text-red-600 p-4 bg-white  rounded border border-solid border-[#E9E9E9]  py-3 px-4'> <RiDeleteBin6Line color='red' /> Delete</button>
 
-
-
-
                         </div>
                     </div>
-
-
-
 
 
 
@@ -180,13 +205,13 @@ const FriendDetails = () => {
                                 </div>
 
 
-                                <div className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
+                                <div onClick={handleText} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
                                     <img src={textPng} alt="" className='w-7 h-7' />
                                     <h1 className='text-lg text-[#1F2937]'>Text</h1>
                                 </div>
 
 
-                                <div className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
+                                <div onClick={handleVideo} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
                                     <img src={videoPng} alt="" className='w-7 h-7' />
                                     <h1 className='text-lg text-[#1F2937]'>Video</h1>
                                 </div>
