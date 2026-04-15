@@ -157,7 +157,7 @@ const FriendDetails = () => {
                                 <button className='bg-[#E9E9E9] rounded border border-solid border-[#E9E9E9] px-3 py-1 cursor-pointer font-semibold '>Edit</button>
                             </div>
 
-                            <p className=''> <span className='text-[#64748B]'>Connect every</span>  <span className='black font-semibold'>30 days</span></p>
+                            <p className=''> <span className='text-[#64748B]'>Connect every</span>  <span className='black font-semibold'>{expectedFriend.goal} days</span></p>
                         </div>
 
                     </div>

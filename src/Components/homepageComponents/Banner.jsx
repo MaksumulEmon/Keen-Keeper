@@ -38,7 +38,7 @@ const Banner = () => {
                     </div>
 
                     <div className='bg-white  shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] rounded-xl p-8 items-center justify-center flex flex-col '>
-                        <p className='text-3xl font-semibold text-[#244D3F]'>{friends.length }</p>
+                        <p className='text-3xl font-semibold text-[#244D3F]'>6</p>
                         <p className='text-lg text-[#64748B]'>Interactions This Month</p>
                     </div>
 

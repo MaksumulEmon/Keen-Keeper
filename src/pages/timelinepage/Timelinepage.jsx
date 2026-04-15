@@ -17,6 +17,7 @@ const Timelinepage = () => {
     };
 
     const currentTime = new Date().toLocaleTimeString();
+    const currentDate = new Date().toLocaleDateString();
 
     const filteredActivities =
         filter === "all"
@@ -33,30 +34,12 @@ const Timelinepage = () => {
 
 
 
-                <select value={filter} onChange={(e) => setFilter(e.target.value)} className= "select-bordered block mx-5 py-2 px-3 rounded border-2 border-black w-50  mt-3">
+                <select value={filter} onChange={(e) => setFilter(e.target.value)} className="select-bordered block mx-5 py-2 px-3 rounded border-2 border-black w-50  mt-3">
                     <option value="all">All</option>
                     <option value="Call">Call</option>
                     <option value="Text">Text</option>
                     <option value="Video">Video</option>
                 </select>
-
-
-
-{/* 
-                <div className='flex flex-col gap-4 pb-10 m-5'>
-                    {
-                        activites.map((item, index) => (
-                            <div key={index} className="bg-white p-4 rounded shadow flex items-center gap-3">
-                                <img src={getIcon(item.type)} className="w-6 h-6" />
-
-                                <div>
-                                    <p className='text-[#64748B]'> <span className='text-xl text-[#244D3F]'>{`${item.type}`}</span> with <span className='text-[#64748B]'> {`${item.friend.name}`}</span></p>
-                                    <p className="text-gray-500 font-medium">{currentTime}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div> */}
 
 
 
@@ -67,17 +50,12 @@ const Timelinepage = () => {
                             <img src={getIcon(item.type)} className="w-6 h-6" />
 
                             <div>
-                                <p className='text-[#64748B]'>
-                                    <span className='text-xl text-[#244D3F]'>
-                                        {item.type}
-                                    </span>{" "}
-                                    with{" "}
-                                    <span>{item.friend.name}</span>
-                                </p>
+                                <div>
+                                    <p className='text-[#64748B]'> <span className='text-xl text-[#244D3F]'>{`${item.type}`}</span> with <span className='text-[#64748B]'> {`${item.friend.name}`}</span></p>
+                                    <p className="text-gray-500 font-medium">{currentTime} , {currentDate}</p>
+                                </div>
 
-                                <p className="text-gray-500 font-medium">
-                                    {currentTime}
-                                </p>
+                               
                             </div>
 
                         </div>

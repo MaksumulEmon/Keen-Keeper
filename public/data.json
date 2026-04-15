@@ -9,7 +9,7 @@
          "tags": ["college", "close friend"],
         "bio": "Met in university. Love hiking together.",
         "goal": 14,
-        "next_due_date": "2025-07-20"
+        "next_due_date": "2026-07-20"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
         "tags": ["office","best friend"],
         "bio": "Work colleague and project partner.",
         "goal": 14,
-        "next_due_date": "2025-07-18"
+        "next_due_date": "2026-07-18"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "tags": ["gym","just friend"],
         "bio": "Workout buddy from gym.",
         "goal": 10,
-        "next_due_date": "2025-07-25"
+        "next_due_date": "2026-07-25"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
         "tags":[ "school", "close friend"],
         "bio": "School friend, loves art.",
         "goal": 14,
-        "next_due_date": "2025-07-15"
+        "next_due_date": "2026-07-15"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "tags": ["travel", "onetime friend"],
         "bio": "Travel partner for trips.",
         "goal": 14,
-        "next_due_date": "2025-07-19"
+        "next_due_date": "2026-07-19"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
         "tags": ["family","best friends"],
         "bio": "Cousin, very close.",
         "goal": 7,
-        "next_due_date": "2025-07-28"
+        "next_due_date": "2026-07-28"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
         "tags": ["business","friend"],
         "bio": "Business partner.",
         "goal": 14,
-        "next_due_date": "2025-07-14"
+        "next_due_date": "2026-07-14"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
         "tags": ["neighbor","close friends"],
         "bio": "Lives next door.",
         "goal": 14,
-        "next_due_date": "2025-07-21"
+        "next_due_date": "2026-07-21"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
         "tags": ["gaming","close friend"],
         "bio": "Online gaming friend.",
         "goal": 7,
-        "next_due_date": "2025-07-30"
+        "next_due_date": "2026-07-30"
     },
     {
         "id": 10,
@@ -117,6 +117,6 @@
         "tags": ["college", "just friends"],
         "bio": "College best friend.",
         "goal": 14,
-        "next_due_date": "2025-07-16"
+        "next_due_date": "2026-07-16"
     }
 ]
