@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router';
 import useFriends from '../../hooks/useFriends';
 import { FadeLoader } from 'react-spinners';
@@ -8,6 +8,8 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import callPng from "../../assets/call.png"
 import textPng from "../../assets/text.png"
 import videoPng from "../../assets/video.png"
+import { TimelineContext } from '../../context/TimelineContext';
+
 
 const FriendDetails = () => {
     const { id } = useParams();
@@ -18,6 +20,7 @@ const FriendDetails = () => {
     // console.log(expectedFriend)
 
 
+    const {call, setCall} = useContext(TimelineContext);
 
 
     if (loading) {
@@ -27,6 +30,20 @@ const FriendDetails = () => {
     }
 
 
+
+    // const handleCall = () => {
+    //     setCall([...call, expectedFriend]);
+    // }
+
+
+    const handleCall = () => {
+        setCall([...call, expectedFriend]);
+    };
+
+
+    console.log(call, "Call");
+
+
     return (
         <div className='bg-[#F8FAFC]'>
             <div className='max-w-7xl mx-auto '>
@@ -34,43 +51,43 @@ const FriendDetails = () => {
                 <div className=' grid grid-cols-1 lg:grid-cols-5 gap-2 lg:pt-17 mx-5'>
 
                     <div className='lg:col-span-2 '>
-                        
-                            
-                                <div className='text-center p-6  rounded-xl  bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] space-y-3  '>
-
-                                    <div className='flex justify-center items-center '>
-                                        <img src={expectedFriend.picture} alt="" className='w-20 h-20 rounded-full ' />
-                                    </div>
-                                    <p className='text-xl text-[#1F2937] font-semibold'>{expectedFriend.name}</p>
 
 
-                                    <p className={`text-white py-2 px-3 rounded-full inline-block
+                        <div className='text-center p-6  rounded-xl  bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] space-y-3  '>
+
+                            <div className='flex justify-center items-center '>
+                                <img src={expectedFriend.picture} alt="" className='w-20 h-20 rounded-full ' />
+                            </div>
+                            <p className='text-xl text-[#1F2937] font-semibold'>{expectedFriend.name}</p>
+
+
+                            <p className={`text-white py-2 px-3 rounded-full inline-block
                                 ${expectedFriend.status === "almost due" && "bg-[#EFAD44]"}
                                 ${expectedFriend.status === "overdue" && "bg-[#EF4444]"} 
                                 ${expectedFriend.status === "on-track" && "bg-[#244D3F]"}`}
-                                    >{expectedFriend.status}</p>
+                            >{expectedFriend.status}</p>
 
 
-                                    <div>
-                                        {
-                                            expectedFriend.tags.map((tag, index) => {
-                                                return (
-                                                    <p key={index} className='text-[#64748B] font-medium  bg-[#CBFADB] inline-block px-3 py-1 rounded-full mr-2'>{tag}</p>
-                                                );
-                                            })
+                            <div>
+                                {
+                                    expectedFriend.tags.map((tag, index) => {
+                                        return (
+                                            <p key={index} className='text-[#64748B] font-medium  bg-[#CBFADB] inline-block px-3 py-1 rounded-full mr-2'>{tag}</p>
+                                        );
+                                    })
 
-                                        }
+                                }
 
-                                    </div>
+                            </div>
 
-                                    <p className='italic font-medium text-[#64748B]'>{expectedFriend.bio}</p>
+                            <p className='italic font-medium text-[#64748B]'>{expectedFriend.bio}</p>
 
-                                    <p className=' font-medium text-[#64748B]'>{expectedFriend.email}</p>
+                            <p className=' font-medium text-[#64748B]'>{expectedFriend.email}</p>
 
 
 
-                                </div>
-                        
+                        </div>
+
                     </div>
 
                     {/* --------------------------------------------------- */}
@@ -157,7 +174,7 @@ const FriendDetails = () => {
 
                             <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4 rounded'>
 
-                                <div className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
+                                <div onClick={handleCall} className='flex flex-col bg-[#F8FAFC] items-center justify-center rounded border border-solid border-[#E9E9E9] p-4 space-y-3'>
                                     <img src={callPng} alt="" className='w-7 h-7' />
                                     <h1 className='text-lg text-[#1F2937]'>Call</h1>
                                 </div>
