@@ -62,7 +62,8 @@ This project focuses on building a real-world tracking system using modern front
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/keenkeeper.git
+git clone https://github.com/MaksumulEmon/Keen-Keeper.git
+
 ```
 
 ### Install dependencies:
@@ -86,5 +87,5 @@ npm run dev
 * 🔐 Authentication system
 * ☁️ Backend integration (Firebase / Node.js)
 
----
+
 
