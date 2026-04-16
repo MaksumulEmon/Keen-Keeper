@@ -3,6 +3,7 @@ import { TimelineContext } from '../../context/TimelineContext';
 import callPng from "../../assets/call.png";
 import textPng from "../../assets/text.png";
 import videoPng from "../../assets/video.png";
+import { MdOutlineDoNotDisturbAlt } from 'react-icons/md';
 
 const Timelinepage = () => {
 
@@ -42,6 +43,16 @@ const Timelinepage = () => {
                 </select>
 
 
+                {activites.length === 0 && <div className="flex flex-col items-center justify-center py-20">
+                    {/* <img src={videoPng} alt="No Data" className="w-40 opacity-70" /> */}
+                    <MdOutlineDoNotDisturbAlt className='w-40 h-40 text-red-500' />
+                    <h2 className="text-xl font-semibold mt-4 text-gray-500">
+                        No timeline history found
+
+                    </h2>
+                    <h2>  Start by adding a call, text, or video interaction</h2>
+                </div>}
+
 
                 <div className='flex flex-col gap-4 pb-10 m-5'>
                     {filteredActivities.map((item, index) => (
@@ -55,7 +66,7 @@ const Timelinepage = () => {
                                     <p className="text-gray-500 font-medium">{currentTime} , {currentDate}</p>
                                 </div>
 
-                               
+
                             </div>
 
                         </div>
